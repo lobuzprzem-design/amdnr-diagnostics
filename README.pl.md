@@ -1,10 +1,12 @@
 # Lokalna diagnostyka AMD NR — v1.0.0
 
+[English](README.md) | **Polski**
+
 Przenośny zbieracz raportów dla Windows PowerShell 5.1. Działa offline, na żądanie. Czyta wskazane logi i informacje o systemie oraz bibliotekach, maskuje typowe dane prywatne i tworzy katalog raportu wraz z ZIP. Nie naprawia gry i nie potwierdza, że NR wykonało się poprawnie.
 
 ## Uruchomienie
 
-Zachowaj trzy pliki w jednym katalogu. Uruchom `Start-Diagnostics.cmd` i podaj w konsoli pełne lokalne ścieżki:
+Zachowaj `Collect-AmdNrDiagnostics.ps1` i `Start-Diagnostics.cmd` w jednym katalogu. Uruchom `Start-Diagnostics.cmd` i podaj w konsoli pełne lokalne ścieżki:
 
 1. Katalog główny gry, w którym znajdują się EXE/DLL i logi. Enter oznacza brak źródła i raport `partial`.
 2. Opcjonalnie do ośmiu dodatkowych katalogów logów, po jednym na pytanie. Enter kończy listę.
@@ -58,7 +60,7 @@ Surowe teksty przebywają wyłącznie w pamięci. Wszystkie zapisywane pola teks
 
 **Przed udostępnieniem samodzielnie przejrzyj wszystkie pliki raportu.** Nietypowe sekrety, inne nazwy użytkowników zapisane bez ścieżki, nazwy maszyn, adresy IP lub inne dane mogą pozostać. Program niczego nie wysyła i nie otwiera stron. Po ręcznej zmianie raportu pierwotny ZIP oraz hashe zapisanych kopii nie opisują tych zmian — nie wysyłaj starego ZIP przez pomyłkę.
 
-Narzędzie nie wymaga instalacji. Żeby je usunąć, usuń własną kopię trzech plików, jeśli nie potrzebujesz późniejszych lokalnych zmian. Raporty pozostają do osobnej decyzji użytkownika; nie są kasowane przez zbieracz.
+Narzędzie nie wymaga instalacji. Żeby je usunąć, usuń własne kopie `Collect-AmdNrDiagnostics.ps1` i `Start-Diagnostics.cmd`, jeśli nie potrzebujesz późniejszych lokalnych zmian. Dokumentację możesz usunąć osobno. Raporty pozostają do osobnej decyzji użytkownika; nie są kasowane przez zbieracz.
 
 ## Referencje podane w briefie
 
