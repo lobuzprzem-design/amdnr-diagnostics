@@ -1,0 +1,10 @@
+# Diagnostic data stays local. Publish only reviewed source and documentation.
+reports/
+amdnr-*/
+*.zip
+*.log
+*.ini
+*.writing-*
+*.zip.partial
+.env
+.env.*
